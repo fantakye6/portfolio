@@ -1,40 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap');
 
-/* =========================
-   DESIGN SYSTEM SIMPLE
-========================= */
 :root {
-  --bg: #0f1115;
-  --surface: #171a21;
-  --text: #f5f7ff;
-  --muted: #a7adbb;
+  --bg: #fffafc;
+  --text: #1f1f1f;
 
-  --accent: #7c5cff;
-  --accent-light: rgba(124, 92, 255, 0.15);
+  --primary: #f7b6c8;   /* rose doux */
+  --primary-dark: #e98aa6;
 
-  --border: 1px solid rgba(255,255,255,0.08);
+  --card: #ffffff;
 
-  --radius: 14px;
+  --border: 1px solid rgba(0,0,0,0.08);
 
-  --transition: 0.2s ease;
+  --shadow: 0 10px 30px rgba(0,0,0,0.06);
+
+  --radius: 18px;
+
+  --font-title: 'Playfair Display', serif;
+  --font: 'Inter', sans-serif;
 }
 
-/* =========================
-   RESET
-========================= */
+/* BASE */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
+  font-family: var(--font);
   background: var(--bg);
   color: var(--text);
-  font-family: Inter, sans-serif;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 a {
@@ -42,206 +38,139 @@ a {
   text-decoration: none;
 }
 
+/* SECTIONS */
 section {
-  padding: 80px 0;
+  padding: 80px 20px;
 }
 
-/* =========================
-   TITRES
-========================= */
+/* TITRES */
 .section-title {
   text-align: center;
   margin-bottom: 50px;
 }
 
 .section-title h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: -1px;
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
 }
 
-.section-title p {
-  color: var(--muted);
-  max-width: 700px;
-  margin: 10px auto 0;
-}
-
-/* =========================
-   NAVIGATION
-========================= */
-#header {
-  position: fixed;
-  left: 20px;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  z-index: 999;
-}
-
-.nav-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.nav-menu a {
-  width: 45px;
-  height: 45px;
+.section-title h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 6px;
+  background: var(--primary);
+  margin: 8px auto 0;
   border-radius: 10px;
-  border: var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  transition: var(--transition);
 }
 
-.nav-menu a:hover,
-.nav-menu .active {
-  background: var(--accent-light);
-  border-color: var(--accent);
-  transform: translateY(-2px);
-}
-
-/* =========================
-   HERO
-========================= */
+/* HERO */
 #hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 0 10%;
-  background: radial-gradient(circle at top, rgba(124,92,255,0.12), transparent 60%);
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
 }
 
 #hero h1 {
-  font-size: 4rem;
-  font-weight: 800;
-  letter-spacing: -2px;
+  font-family: var(--font-title);
+  font-size: 3.5rem;
 }
 
 #hero p {
-  color: var(--muted);
-  font-size: 1.2rem;
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  opacity: 0.8;
 }
 
-/* =========================
-   BOUTONS
-========================= */
-.button,
-.btn-scroll,
-.btn-download {
-  display: inline-block;
+#hero span {
+  color: var(--primary-dark);
+  font-weight: 500;
+}
+
+/* BOUTONS */
+button, .btn-scroll, .btn-download {
   margin-top: 20px;
   padding: 12px 22px;
-  border-radius: 10px;
-  background: var(--accent);
-  color: white;
-  font-weight: 600;
-  transition: var(--transition);
+  border-radius: 999px;
   border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
-.button:hover {
+button:hover {
+  background: var(--primary-dark);
   transform: translateY(-2px);
-  opacity: 0.9;
 }
 
-/* =========================
-   CARTES GENERALES
-========================= */
-.icon-box,
-.portfolio-wrap,
-.resume-item-skill,
-.info-list,
-.video-wrapper-box,
-.contact .info,
-.contact .php-email-form {
-  background: var(--surface);
+/* CARDS */
+.card, .icon-box, .portfolio-wrap {
+  background: var(--card);
   border: var(--border);
   border-radius: var(--radius);
   padding: 20px;
-  transition: var(--transition);
+  box-shadow: var(--shadow);
+  transition: 0.2s ease;
 }
 
+.card:hover,
 .icon-box:hover,
 .portfolio-wrap:hover {
   transform: translateY(-4px);
-  border-color: var(--accent);
 }
 
-/* =========================
-   SKILLS BAR
-========================= */
+/* NAV (si sidebar) */
+.nav-menu a {
+  display: block;
+  padding: 10px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.nav-menu a:hover {
+  background: rgba(247, 182, 200, 0.2);
+}
+
+/* SKILLS BAR SIMPLE */
 .progress-bar-wrap {
-  background: rgba(255,255,255,0.06);
+  background: #eee;
   border-radius: 999px;
   overflow: hidden;
+  height: 10px;
 }
 
 .progress-bar {
-  background: var(--accent);
   height: 100%;
+  background: var(--primary);
 }
 
-/* =========================
-   PORTFOLIO FILTERS
-========================= */
-.portfolio #portfolio-flters li {
-  font-size: 0.75rem;
-  padding: 8px 14px;
-  border-radius: 999px;
-  cursor: pointer;
-  color: var(--muted);
-  transition: var(--transition);
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  background: var(--accent);
-  color: white;
-}
-
-/* =========================
-   CONTACT FORM
-========================= */
-.contact input,
-.contact textarea {
+/* CONTACT */
+input, textarea {
   width: 100%;
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: var(--border);
-  background: transparent;
-  color: var(--text);
+  margin-bottom: 12px;
+  font-family: var(--font);
 }
 
-.contact input:focus,
-.contact textarea:focus {
+input:focus, textarea:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: var(--primary);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 #footer {
   text-align: center;
-  padding: 40px 0;
-  border-top: var(--border);
-  color: var(--muted);
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 2.8rem;
-  }
-
-  #header {
-    left: 10px;
-  }
+  padding: 40px;
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
