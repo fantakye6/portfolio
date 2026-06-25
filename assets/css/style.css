@@ -352,6 +352,22 @@ section { padding: 90px 0; overflow: hidden; position: relative; }
 .skills .progress .skill .val { float: right; font-family: "Space Mono", monospace; font-size: 12px; color: var(--c-pink-deep); }
 .skills .progress-bar-wrap { background: var(--c-bg-soft); border-radius: 20px; overflow: hidden; }
 .skills .progress-bar { width: 1px; height: 8px; transition: width 1s var(--ease); background: var(--c-pink); border-radius: 20px; }
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.tag-badge {
+    background-color: #f0f4f8; /* Choisis une couleur douce en accord avec ta charte */
+    color: #1a365d; /* Texte bien contrasté pour le RGAA */
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid #e2e8f0;
+}
 
 /*--------------------------------------------------------------
 # Portfolio cards (used on home preview + competency pages)
