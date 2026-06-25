@@ -381,7 +381,41 @@
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script>
+  // Initialisation autonome (remplace l'ancien main.js du template)
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.AOS) { AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60 }); }
+
+    // Mobile nav toggle
+    var toggle = document.querySelector('.mobile-nav-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        document.body.classList.toggle('mobile-nav-active');
+        toggle.classList.toggle('bi-list');
+        toggle.classList.toggle('bi-x');
+      });
+    }
+
+    // Liens "scrollto" : ferme le menu mobile après clic
+    document.querySelectorAll('.scrollto, .nav-link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (document.body.classList.contains('mobile-nav-active')) {
+          document.body.classList.remove('mobile-nav-active');
+        }
+      });
+    });
+
+    // Back to top
+    var backToTop = document.querySelector('.back-to-top');
+    if (backToTop) {
+      var toggleBackToTop = function () {
+        window.scrollY > 100 ? backToTop.classList.add('active') : backToTop.classList.remove('active');
+      };
+      window.addEventListener('load', toggleBackToTop);
+      document.addEventListener('scroll', toggleBackToTop);
+    }
+  });
+</script>
 
 </body>
 </html>
