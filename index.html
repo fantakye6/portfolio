@@ -1,421 +1,248 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Fanta KOUYATE — Portfolio</title>
-    <meta content="Portfolio de Fanta KOUYATE, étudiante en BUT Information-Communication, parcours INFONUM. UX, accessibilité, recherche d'information, data." name="description">
-    <meta content="UX design, accessibilité numérique, ergonomie, inclusion, BUT Info-Com, Bordeaux, Fanta Kouyate" name="keywords">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Vendor CDN CSS Files -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
-
-    <link href="assets/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanta Kouyate — Portfolio Information Numérique & UX</title>
+    <!-- Insère ici tes liens de feuilles de style CSS existants -->
 </head>
-
 <body>
 
-<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-
-<header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
+<header>
+    <nav aria-label="Navigation principale">
         <ul>
-            <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
-            <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Présentation</span></a></li>
-            <li><a href="#competences" class="nav-link scrollto"><i class="bx bx-bulb"></i> <span>Compétences</span></a></li>
-            <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Mon CV</span></a></li>
-            <li><a href="#rapport" class="nav-link scrollto"><i class="bx bx-file"></i> <span>Rapport d'activité</span></a></li>
-            <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Me contacter</span></a></li>
+            <li><a href="#hero"><span>Accueil</span></a></li>
+            <li><a href="#about"><span>Présentation</span></a></li>
+            <li><a href="#competences"><span>Compétences</span></a></li>
+            <li><a href="#resume"><span>Mon CV</span></a></li>
+            <li><a href="#rapport"><span>Rapport d'activité</span></a></li>
+            <li><a href="#contact"><span>Me contacter</span></a></li>
         </ul>
     </nav>
 </header>
 
-<!-- ======= Hero ======= -->
-<section id="hero">
-    <div class="blob-field">
-        <div class="blob" style="width:480px;height:480px;top:-120px;right:-100px;"></div>
-        <div class="blob b2" style="width:380px;height:380px;bottom:-80px;left:10%;"></div>
-    </div>
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <span class="eyebrow">Portfolio · BUT Information-Communication</span>
+<!-- ZONE HERO -->
+<section id="hero" class="hero-section">
+    <div class="container">
+        <span class="subtitle">Portfolio · BUT Information-Communication</span>
         <h1>Fanta Kouyate</h1>
-        <p class="tagline">Concevoir une information plus claire, plus accessible, plus utile.</p>
-        <p class="pluspetit">3ème année — parcours Information Numérique dans les Organisations. Recherche, data, UX et communication, au service de l'accessibilité numérique.</p>
-        <div class="hero-actions">
-            <a href="#competences" class="btn-scroll scrollto">Voir mes compétences</a>
-            <a href="assets/CV KOUYATE-t 2.pdf" class="btn-download" target="_blank">Télécharger mon CV</a>
+        <p class="lead">Concevoir une information plus claire, plus accessible, plus utile.</p>
+        <p>Étudiante en 3ème année — parcours Information Numérique dans les Organisations. Recherche, data, UX et communication au service de l'accessibilité numérique.</p>
+        <div class="hero-buttons">
+            <a href="#competences" class="btn btn-primary">Voir mes compétences</a>
+            <a href="assets/CV KOUYATE-t 2.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Télécharger mon CV (PDF)</a>
         </div>
     </div>
 </section>
 
-<main id="main">
-
-    <!-- ======= About ======= -->
-    <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
+<main>
+    <!-- PRÉSENTATION -->
+    <section id="about" class="about-section">
+        <div class="container">
             <div class="section-title">
-                <span class="eyebrow">Qui suis-je</span>
+                <span>Qui suis-je</span>
                 <h2>Étudiante curieuse, orientée accessibilité</h2>
-                <p>Je m'intéresse à la façon dont les gens accèdent, comprennent et utilisent l'information — ça m'a menée vers l'UX, l'ergonomie et l'inclusion numérique.</p>
+                <p>Je m'intéresse à la façon dont les gens accèdent, comprennent et utilisent l'information — ce qui m'a naturellement guidée vers l'UX, l'ergonomie et l'inclusion numérique.</p>
             </div>
 
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                    <div class="img-profile-wrapper">
-                        <img src="assets/img/fanta.jpg" class="img-fluid" alt="Photo de Fanta KOUYATE">
-                    </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img alt="Portrait photographique de Fanta KOUYATE" src="assets/img/fanta.jpg">
                 </div>
-                <div class="col-lg-8 pt-4 pt-lg-0 content">
+                <div class="about-text">
                     <h3>3ème année — BUT Info-Com, parcours INFONUM</h3>
-                    <p class="fst-italic">À l'IUT Bordeaux-Montaigne depuis 2023. Je termine mon cursus cette année avant un master en ergonomie et accessibilité.</p>
+                    <p>À l'IUT Bordeaux-Montaigne depuis 2023, je termine mon cursus cette année avec l'objectif d'intégrer un Master axé sur l'ergonomie et l'accessibilité numérique (TEC&H).</p>
 
-                    <div class="row mt-3">
-                        <div class="col-sm-6">
-                            <ul>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Né(e) le</strong> <span>6 mars 2005</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Email</strong> <span>fanta.kouyate635@gmail.com</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Tél.</strong> <span>06 01 45 49 12</span></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <ul>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Lieu</strong> <span>Bordeaux (33)</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Études</strong> <span>BUT Info-Com, 3A</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Projet</strong> <span>Master TEC&amp;H</span></li>
-                            </ul>
-                        </div>
+                    <div class="info-grid">
+                        <ul>
+                            <li><strong>Email :</strong> <a href="mailto:fanta.kouyate635@gmail.com">fanta.kouyate635@gmail.com</a></li>
+                            <li><strong>Tél. :</strong> <a href="tel:+33601454912">06 01 45 49 12</a></li>
+                            <li><strong>Localisation :</strong> Bordeaux (33)</li>
+                            <li><strong>Projet :</strong> Master TEC&H (Technologie, Ergonomie, Cognition & Handicap)</li>
+                        </ul>
                     </div>
-
-                    <p class="about-summary">
-                        Recherche documentaire, veille, data, architecture de l'information : mes projets et stages m'ont donné une vraie boîte à outils pour concevoir des contenus numériques plus clairs et inclusifs.
-                    </p>
                 </div>
             </div>
 
-            <div class="stat-strip" data-aos="fade-up" data-aos-delay="150">
-                <div class="stat-item"><span class="num">3</span><span class="label">Ans de BUT</span></div>
-                <div class="stat-item"><span class="num">2</span><span class="label">Stages en 3A</span></div>
-                <div class="stat-item"><span class="num">5</span><span class="label">Domaines de compétence</span></div>
-                <div class="stat-item"><span class="num">10+</span><span class="label">Projets réalisés</span></div>
+            <!-- Compteurs d'activité rapides -->
+            <div class="counters-grid">
+                <div class="counter-item"><span class="number">3</span><span class="label">Ans de BUT</span></div>
+                <div class="counter-item"><span class="number">2</span><span class="label">Stages en 3A</span></div>
+                <div class="counter-item"><span class="number">5</span><span class="label">Domaines de compétence</span></div>
+                <div class="counter-item"><span class="number">10+</span><span class="label">Projets réalisés</span></div>
             </div>
         </div>
     </section>
 
-    <!-- ======= Compétences — cartes vers pages dédiées ======= -->
-    <section id="competences" class="section-bg">
-        <div class="container" data-aos="fade-up">
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="services-section">
+        <div class="container">
             <div class="section-title">
-                <span class="eyebrow">Compétences</span>
+                <span>Compétences</span>
                 <h2>Cinq domaines, un même fil rouge</h2>
-                <p>Chaque domaine a sa page : projets, méthode et ce que j'en retiens.</p>
+                <p>Découvrez mes projets, mes méthodologies et mes retours d'expérience par catégorie :</p>
             </div>
 
-            <div class="competency-grid">
-
-                <a href="competences/recherche.html" class="competency-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="ico"><i class="bx bx-search-alt"></i></div>
+            <div class="skills-cards-grid">
+                <a href="competences/recherche.html" class="skill-card">
                     <h4>Recherche &amp; analyse de l'information</h4>
-                    <p>OSINT, veille, recherche documentaire — croiser les sources pour une info fiable.</p>
-                    <span class="go">Voir les projets <i class="bx bx-right-arrow-alt"></i></span>
+                    <p>OSINT, veille stratégique, recherche documentaire — croiser et qualifier les sources pour une information fiable.</p>
+                    <span class="card-link">Voir les projets</span>
                 </a>
 
-                <a href="competences/donnees.html" class="competency-card" data-aos="fade-up" data-aos-delay="150">
-                    <div class="ico"><i class="bx bx-bar-chart-alt-2"></i></div>
+                <a href="competences/donnees.html" class="skill-card">
                     <h4>Données &amp; datavisualisation</h4>
-                    <p>Open data, data journalisme, data art — rendre les chiffres lisibles.</p>
-                    <span class="go">Voir les projets <i class="bx bx-right-arrow-alt"></i></span>
+                    <p>Open data, data journalisme, data art — trier, analyser et rendre les chiffres intelligibles et parlants.</p>
+                    <span class="card-link">Voir les projets</span>
                 </a>
 
-                <a href="competences/ux-numerique.html" class="competency-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="ico"><i class="bx bx-shape-square"></i></div>
+                <a href="competences/ux-numerique.html" class="skill-card">
                     <h4>UX/UI &amp; conception numérique</h4>
-                    <p>Architecture de l'information, accessibilité, sites web centrés utilisateur.</p>
-                    <span class="go">Voir les projets <i class="bx bx-right-arrow-alt"></i></span>
+                    <p>Architecture de l'information, critères d'accessibilité (RGAA), design de sites web centrés sur l'utilisateur.</p>
+                    <span class="card-link">Voir les projets</span>
                 </a>
 
-                <a href="competences/communication.html" class="competency-card" data-aos="fade-up" data-aos-delay="250">
-                    <div class="ico"><i class="bx bx-megaphone"></i></div>
+                <a href="competences/communication.html" class="skill-card">
                     <h4>Communication &amp; production de contenus</h4>
-                    <p>Identité de marque, com' institutionnelle, contenus pour les réseaux.</p>
-                    <span class="go">Voir les projets <i class="bx bx-right-arrow-alt"></i></span>
+                    <p>Identité de marque, communication institutionnelle, création graphique et éditoriale adaptée aux supports.</p>
+                    <span class="card-link">Voir les projets</span>
                 </a>
 
-                <a href="competences/gestion-projet.html" class="competency-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="ico"><i class="bx bx-task"></i></div>
+                <a href="competences/gestion-projet.html" class="skill-card">
                     <h4>Gestion de projet &amp; posture pro</h4>
-                    <p>Organisation, travail d'équipe, adaptation à des environnements variés.</p>
-                    <span class="go">Voir les projets <i class="bx bx-right-arrow-alt"></i></span>
+                    <p>Organisation agile, travail collaboratif, adaptabilité face aux besoins des organisations.</p>
+                    <span class="card-link">Voir les projets</span>
                 </a>
-
             </div>
 
-            <h3 class="resume-title mt-5 mb-4 text-center">Outils maîtrisés</h3>
-            <div class="row skills-content">
-                <div class="col-lg-6">
-                    <div class="progress">
-                        <span class="skill">Canva <i class="val">100%</i></span>
-                        <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">Wix / HTML-CSS <i class="val">80%</i></span>
-                        <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">Figma <i class="val">75%</i></span>
-                        <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="progress">
-                        <span class="skill">Powerpoint &amp; Word <i class="val">85%</i></span>
-                        <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">Capcut <i class="val">100%</i></span>
-                        <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div></div>
-                    </div>
-                    <div class="progress">
-                        <span class="skill">Adobe InDesign <i class="val">55%</i></span>
-                        <div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div></div>
-                    </div>
+            <!-- REMPLACE LES BARRES DE POURCENTAGE PAR DES BADGES MODERNES -->
+            <div class="tools-section">
+                <h3>Outils & Technologies maîtrisés</h3>
+                <div class="tags-container">
+                    <span class="tag-badge">Figma (UX/UI)</span>
+                    <span class="tag-badge">HTML5 / CSS3</span>
+                    <span class="tag-badge">Notions RGAA & Accessibilité</span>
+                    <span class="tag-badge">Canva</span>
+                    <span class="tag-badge">Adobe InDesign</span>
+                    <span class="tag-badge">CapCut (Montage vidéo)</span>
+                    <span class="tag-badge">Outils Bureautiques (Word, PowerPoint)</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ======= CV ======= -->
-    <section id="resume" class="resume">
-        <div class="container" data-aos="fade-up">
+    <!-- MON CV / PARCOURS -->
+    <section id="resume" class="resume-section">
+        <div class="container">
             <div class="section-title">
-                <span class="eyebrow">Parcours</span>
+                <span>Parcours</span>
                 <h2>Mon CV</h2>
-                <p>Études, stages et projet de poursuite d'études.</p>
+                <p>Mon parcours académique, mes immersions professionnelles et mes projets d'avenir.</p>
             </div>
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Études</h3>
-                    <div class="resume-item">
-                        <h4>BUT Information-Communication, INFONUM</h4>
+            <div class="cv-grid">
+                <div class="cv-column">
+                    <h3>Formation</h3>
+                    <div class="cv-item">
+                        <h4>BUT Information-Communication, parcours INFONUM</h4>
                         <h5>2023 – 2026</h5>
                         <p>IUT Bordeaux-Montaigne</p>
                     </div>
-                    <div class="resume-item">
-                        <h4>BAC STMG, mention Assez Bien</h4>
+                    <div class="cv-item">
+                        <h4>Baccalauréat STMG</h4>
                         <h5>2022 – 2023</h5>
-                        <p>Lycée Condorcet, Bordeaux</p>
+                        <p>Lycée Condorcet, Bordeaux — Mention Assez Bien</p>
                     </div>
-                    <div class="resume-item">
-                        <h4>Master Technologie, Ergonomie, Cognition &amp; Handicap</h4>
-                        <h5>Projet — dès 2026</h5>
-                        <p>Approfondir l'accessibilité et la cognition liée au handicap.</p>
+                    <div class="cv-item project-future">
+                        <h4>Projet : Master Technologie, Ergonomie, Cognition &amp; Handicap (TEC&H)</h4>
+                        <h5>Dès 2026</h5>
+                        <p>Ambition d'approfondir l'ingénierie du handicap, la cognition et l'accessibilité universelle.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <h3 class="resume-title">Expériences</h3>
-                    <div class="resume-item">
-                        <h4>Stage — communication de marque</h4>
-                        <h5>Avril – mai 2026</h5>
-                        <p>SevenMates, marque de streetwear</p>
+                <div class="cv-column">
+                    <h3>Expériences professionnelles</h3>
+                    <div class="cv-item">
+                        <h4>Stage — Communication de marque & Design</h4>
+                        <h5>Avril – Mai 2026</h5>
+                        <p>SevenMates (Marque de streetwear)</p>
                         <ul>
-                            <li>Plaquette, brand book, déclinaisons de logo</li>
-                            <li>Réflexion stratégie &amp; positionnement</li>
+                            <li>Création du Brand Book, de la plaquette commerciale et déclinaisons de l'identité visuelle.</li>
+                            <li>Participation active aux choix stratégiques de positionnement de marque.</li>
                         </ul>
                     </div>
-                    <div class="resume-item">
-                        <h4>Stage — recherche documentaire</h4>
+                    <div class="cv-item">
+                        <h4>Stage — Recherche documentaire & Médiation</h4>
                         <h5>Juin 2026</h5>
-                        <p>Direction de la documentation, Département de la Gironde</p>
+                        <p>Direction de la Documentation, Conseil Départemental de la Gironde</p>
                         <ul>
-                            <li>Bibliographie pour les assistants familiaux</li>
+                            <li>Conception d'une bibliographie thématique spécialisée pour accompagner les assistants familiaux.</li>
                         </ul>
                     </div>
-                    <div class="resume-item">
-                        <h4>Stage — documentaliste (1A)</h4>
+                    <div class="cv-item">
+                        <h4>Stage de découverte — Documentaliste</h4>
                         <h5>Mai 2024</h5>
-                        <p>Département de la Gironde</p>
+                        <p>Conseil Départemental de la Gironde (Stage de 1ère année)</p>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center mt-5">
-                <a class="button center" href="assets/CV KOUYATE-t 2.pdf" target="_blank"><i class="bi bi-file-earmark-pdf-fill me-2"></i> Télécharger mon CV complet</a>
+            <div class="text-center">
+                <a href="assets/CV KOUYATE-t 2.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Télécharger mon CV Complet (PDF)</a>
             </div>
         </div>
     </section>
 
-    <!-- ======= Qualités ======= -->
-    <section id="services" class="services section-bg">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title">
-                <span class="eyebrow">En quelques mots</span>
-                <h2>Ma façon de travailler</h2>
+    <!-- RAPPORT D'ACTIVITÉ -->
+    <section id="rapport" class="report-section">
+        <div class="container text-center">
+            <span class="subtitle">Bilan 2025 – 2026</span>
+            <h2>Mon rapport d'activité</h2>
+            <p>Retrouvez le bilan complet de ma troisième année de BUT : analyses de mes enseignements, retours réflexifs sur mes projets phares et bilans de compétences tirés de mes expériences en stage.</p>
+            
+            <div class="keywords-cloud">
+                <span class="keyword">Accessibilité Numérique</span>
+                <span class="keyword">UX Design</span>
+                <span class="keyword">Ergonomie</span>
+                <span class="keyword">Inclusion</span>
+                <span class="keyword">OSINT & Veille</span>
+                <span class="keyword">Open Data</span>
             </div>
 
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-box"><div class="icon"><i class="bx bx-show"></i></div>
-                        <h4>À l'écoute</h4><p>Je prends le temps de comprendre une demande avant d'agir.</p></div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-                    <div class="icon-box"><div class="icon"><i class="bx bx-target-lock"></i></div>
-                        <h4>Motivée</h4><p>Je vais jusqu'au bout, même quand ça résiste un peu.</p></div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box"><div class="icon"><i class="bx bx-low-vision"></i></div>
-                        <h4>Discrète</h4><p>J'observe et j'analyse avant de proposer.</p></div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-box"><div class="icon"><i class="bx bx-search-alt"></i></div>
-                        <h4>Curieuse</h4><p>Veille active, toujours un œil sur ce qui évolue.</p></div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
-                    <div class="icon-box"><div class="icon"><i class="bx bx-palette"></i></div>
-                        <h4>Créative</h4><p>J'aime imaginer des contenus qui captent l'attention.</p></div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box"><div class="icon"><i class="bx bx-heart"></i></div>
-                        <h4>Empathique</h4><p>Je perçois vite les besoins des utilisateurs.</p></div>
-                </div>
-            </div>
+            <a href="assets/rapport-activite-fanta-kouyate.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Télécharger le rapport d'activité (PDF)
+            </a>
         </div>
     </section>
 
-    <!-- ======= Rapport d'activité (condensé) ======= -->
-    <section id="rapport" class="resume">
-        <div class="container" data-aos="fade-up">
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="container">
             <div class="section-title">
-                <span class="eyebrow">2025 – 2026</span>
-                <h2>Mon rapport d'activité</h2>
-                <p>Bilan de ma 3ème année : enseignements, projets et stages qui ont construit mon projet professionnel.</p>
-            </div>
-
-            <div class="report-tags" data-aos="fade-up" data-aos-delay="100">
-                <span>Accessibilité numérique</span><span>UX design</span><span>Ergonomie</span>
-                <span>Inclusion</span><span>OSINT</span><span>Open data</span><span>Recherche documentaire</span>
-            </div>
-
-            <div class="text-center" data-aos="fade-up" data-aos-delay="150">
-                <a class="button center" href="assets/rapport-activite-fanta-kouyate.pdf" target="_blank">
-                    <i class="bi bi-file-pdf-fill me-2"></i> Télécharger le rapport complet
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======= Contact ======= -->
-    <section id="contact" class="contact section-bg">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title">
-                <span class="eyebrow">Contact</span>
+                <span>Contact</span>
                 <h2>Me contacter</h2>
-                <p>Pour toute collaboration, projet ou échange sur l'UX et l'accessibilité.</p>
+                <p>Disponible pour échanger sur des opportunités de projets, d'alternance ou pour discuter d'UX et d'accessibilité.</p>
             </div>
 
-            <div class="row">
-                <div class="col-lg-5 mb-4 mb-lg-0">
-                    <div class="info">
-                        <div class="address">
-                            <i class="bi bi-geo-alt"></i><h4>Adresse</h4><p>33300 Bordeaux, France</p>
-                        </div>
-                        <div class="email">
-                            <i class="bi bi-envelope"></i><h4>Email</h4><p><a href="mailto:fanta.kouyate635@gmail.com">fanta.kouyate635@gmail.com</a></p>
-                        </div>
-                        <div class="phone">
-                            <i class="bi bi-phone"></i><h4>Téléphone</h4><p><a href="tel:0601454912">06 01 45 49 12</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-7">
-                    <form action="#" method="POST" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="name">Votre nom</label>
-                                <input type="text" name="name" class="form-control" id="name" required placeholder="Jean Dupont">
-                            </div>
-                            <div class="form-group col-md-6 mt-3 mt-md-0">
-                                <label for="email">Votre email</label>
-                                <input type="email" class="form-control" name="email" id="email" required placeholder="jean@example.com">
-                            </div>
-                        </div>
-                        <div class="form-group mt-3">
-                            <label for="subject">Objet</label>
-                            <input type="text" class="form-control" name="subject" id="subject" required placeholder="Objet du message">
-                        </div>
-                        <div class="form-group mt-3">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" name="message" rows="5" id="message" required placeholder="Votre message..."></textarea>
-                        </div>
-                        <div class="text-center"><button type="submit" class="button mt-3">Envoyer le message</button></div>
-                    </form>
-                </div>
+            <div class="contact-info-block">
+                <p><strong>Adresse :</strong> 33300 Bordeaux, France</p>
+                <p><strong>Email :</strong> <a href="mailto:fanta.kouyate635@gmail.com">fanta.kouyate635@gmail.com</a></p>
+                <p><strong>Téléphone :</strong> <a href="tel:+33601454912">06 01 45 49 12</a></p>
             </div>
         </div>
     </section>
-
 </main>
 
-<footer id="footer">
-    <div class="container">
+<footer>
+    <div class="container text-center">
         <h3>Fanta KOUYATE</h3>
         <p>Rendre l'information plus claire, plus accessible et plus utile.</p>
-        <div class="copyright">&copy; Fanta KOUYATE — Tous droits réservés.</div>
+        <p class="copyright">© Fanta KOUYATE — Tous droits réservés.</p>
     </div>
 </footer>
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-<script>
-  // Initialisation autonome (remplace l'ancien main.js du template)
-  document.addEventListener('DOMContentLoaded', function () {
-    if (window.AOS) { AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60 }); }
-
-    // Mobile nav toggle
-    var toggle = document.querySelector('.mobile-nav-toggle');
-    if (toggle) {
-      toggle.addEventListener('click', function () {
-        document.body.classList.toggle('mobile-nav-active');
-        toggle.classList.toggle('bi-list');
-        toggle.classList.toggle('bi-x');
-      });
-    }
-
-    // Liens "scrollto" : ferme le menu mobile après clic
-    document.querySelectorAll('.scrollto, .nav-link').forEach(function (link) {
-      link.addEventListener('click', function () {
-        if (document.body.classList.contains('mobile-nav-active')) {
-          document.body.classList.remove('mobile-nav-active');
-        }
-      });
-    });
-
-    // Back to top
-    var backToTop = document.querySelector('.back-to-top');
-    if (backToTop) {
-      var toggleBackToTop = function () {
-        window.scrollY > 100 ? backToTop.classList.add('active') : backToTop.classList.remove('active');
-      };
-      window.addEventListener('load', toggleBackToTop);
-      document.addEventListener('scroll', toggleBackToTop);
-    }
-  });
-</script>
+<!-- Bouton retour en haut accessible aux lecteurs d'écran -->
+<a href="#hero" class="back-to-top" aria-label="Retour en haut de la page">↑</a>
 
 </body>
 </html>
